@@ -1,4 +1,5 @@
 import { useState } from "react";
+import StyledButton from "./StyledComponent";
 
 function Counter() {
   const [count, setCount] = useState<number>(0);
@@ -6,7 +7,9 @@ function Counter() {
   return (
     <div>
       <h2>{count}</h2>
-      <button onClick={() => setCount(count + 1)}>Increment button</button>
+      <StyledButton onClick={() => setCount(count + 1)}>
+        Increment button
+      </StyledButton>
     </div>
   );
 }
